@@ -98,7 +98,7 @@
 // $body-antialiased: true;
 
 // Application Colors
-// $primary-color: #00558b;
+ $primary-color: #00558b;
 // $secondary-color: #f1f1f1;
 // $alert-color: #F04124;
 // $info-color: #A0D3E8;
@@ -246,7 +246,7 @@
 // $button-style: solid;
 // $button-background: $primary-color;
 // $button-color: auto;
-// $button-radius: 0;
+ $button-radius: 3px;
 // $button-sizes: (
 //   tiny: 0.7,
 //   small: 0.8,
@@ -473,7 +473,7 @@
 // );
 
 // Set if movement-based transitions should also fade the element in and out
-// $motion-slide-and-fade: false;
+ $motion-slide-and-fade: true;
 // $motion-hinge-and-fade: true;
 // $motion-scale-and-fade: true;
 // $motion-spin-and-fade: true;
@@ -528,7 +528,7 @@
 // 20. Off-canvas
 // - - - - - - - - - - - - - - -
 
-// $offcanvas-size-horizontal: 250px;
+ $offcanvas-size-horizontal: 350px;
 // $offcanvas-size-vertical: 250px;
 
 // $offcanvas-background: #fff;
