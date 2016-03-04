@@ -27,6 +27,8 @@ var paths = {
   // Sass will check these folders for files when you use @import.
   sass: [
     'client/assets/scss',
+    'client/assets/scss/custom/',
+    'client/assets/scss/components/',
     'bower_components/foundation-apps/scss'
   ],
   // These files include Foundation for Apps and its dependencies
@@ -44,7 +46,9 @@ var paths = {
   ],
   // These files are for your app's JavaScript
   appJS: [
-    'client/assets/js/app.js'
+    'client/assets/js/app.js',
+    'client/assets/js/c1.js',
+    'bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js',
   ]
 }
 
@@ -68,10 +72,10 @@ gulp.task('copy', function() {
 // Copies your app's page templates and generates URLs for them
 gulp.task('copy:templates', function() {
   return gulp.src('./client/templates/**/*.html')
-    .pipe(router({
-      path: 'build/assets/js/routes.js',
-      root: 'client'
-    }))
+//    .pipe(router({
+//      path: 'build/assets/js/routes.js',
+//      root: 'client'
+//    }))
     .pipe(gulp.dest('./build/templates'))
   ;
 });
